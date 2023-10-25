@@ -1,0 +1,181 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Products Page</title>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+        <div class="container-fluid" style="margin-bottom:-14px">
+          <a class="navbar-brand mb-3" href="index.html" >E-Commerce</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="products.html">Products</a>
+              </li>
+              <li>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search product..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </li>
+            </ul>
+          </div>
+          <div style="padding-bottom: 15px">
+            <button type="button" class="btn btn-info position-relative" data-bs-toggle="modal" data-bs-target="#addprodModal" style="margin-right:10">Add Product</button>
+            <button type="button" class="btn btn-primary position-relative" >
+                Cart
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  4
+                  <span class="visually-hidden">cart items</span>
+                </span>
+              </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container" style="padding-top: 15px;">
+        <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center">
+            <div class="col" style="max-width:400px;">
+                <div class="card h-100">
+                    <img src="C:\Users\User\Projects\4_1_express_bootstrap\public\assets\fixingtint.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Etude House Fixing Tint</h5>
+                        <p class="card-text">A transfer-proof lip tint so you don't have to worry about staining your mask! Etude House's Fixing Tints 
+                            are matte yet hydrating with a lightweight finish that sits comfortably on the lips. Apply and dry for 60 seconds, then 
+                            you're good to go!</p>
+                        <p>Shades: 16</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex bd-highlight mb-0">
+                            
+                            <div class="me-auto p-2 bd-highlight">
+                                <small><label for="product">Price:</label>
+                                <button type="button" class="btn btn-dark btn-sm" id="product" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">₱330</button>
+                                </small>
+                            </div>
+                            <div class="p-2 bd-highlight"><button type="button" class="btn btn-outline-success btn-sm">Add to Cart</button></div>
+                            <div class="p-2 bd-highlight"><button type="button" class="btn btn-outline-primary btn-sm position-relative" style="--bs-btn-padding-x: 1.5rem;">💙</button></div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" style="max-width:400px">
+                <div class="card h-100">
+                    <img src="C:\Users\User\Projects\4_1_express_bootstrap\public\assets\juicytint.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Romand Juicy Lasting Tint</h5>
+                        <p class="card-text">Effortlessly achieve plump lips with vivid tints offered in fruity shades. Get a glossy look without 
+                            the heavy or sticky feeling! Lips are lightly tinted after the shine wears off.</p>
+                        <p>Shades: 17</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex bd-highlight mb-0">
+                            
+                            <div class="me-auto p-2 bd-highlight">
+                                <small><label for="product">Price:</label>
+                                <button type="button" class="btn btn-dark btn-sm" id="product" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">₱340</button>
+                                </small>
+                            </div>
+                            <div class="p-2 bd-highlight"><button type="button" class="btn btn-outline-success btn-sm">Add to Cart</button></div>
+                            <div class="p-2 bd-highlight"><button type="button" class="btn btn-outline-primary btn-sm position-relative" style="--bs-btn-padding-x: 1.5rem;">💙</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" style="max-width:400px">
+                <div class="card h-100">
+                    <img src="C:\Users\User\Projects\4_1_express_bootstrap\public\assets\boj.png" class="card-img-top" alt="...">
+                    <div class="card-body" >
+                        <h5 class="card-title">Beauty of Joseon Relief Sun</h5>
+                        <p class="card-text">With rice and grain extracts along with probiotics, this is a sensitive skin-safe chemical sunscreen, 
+                            it also cools and hydrates without a white cast (thanks to those new gen UV filters!).</p>
+                        <p>Variant: 50 mL / 1.69 fl. oz</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex bd-highlight mb-0">
+                            
+                            <div class="me-auto p-2 bd-highlight">
+                                <small><label for="product">Price:</label>
+                                <button type="button" class="btn btn-dark btn-sm" id="product" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">₱440</button>
+                                </small>
+                            </div>
+                            <div class="p-2 bd-highlight"><button type="button" class="btn btn-outline-success btn-sm">Add to Cart</button></div>
+                            <div class="p-2 bd-highlight"><button type="button" class="btn btn-outline-primary btn-sm position-relative" style="--bs-btn-padding-x: 1.5rem;">💙</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" style="max-width:400px">
+                <div class="card h-100">
+                    <img src="C:\Users\User\Projects\4_1_express_bootstrap\public\assets\mineralpow.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Innisfree No-sebum Mineral Powder</h5>
+                        <p class="card-text">A setting powder in three colours to address different complexion needs</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex bd-highlight mb-0">
+                            
+                            <div class="me-auto p-2 bd-highlight">
+                                <small><label for="product">Price:</label>
+                                <button type="button" class="btn btn-dark btn-sm" id="product" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">₱295</button>
+                                </small>
+                            </div>
+                            <div class="p-2 bd-highlight"><button type="button" class="btn btn-outline-success btn-sm">Add to Cart</button></div>
+                            <div class="p-2 bd-highlight"><button type="button" class="btn btn-outline-primary position-relative btn-sm" style="--bs-btn-padding-x: 1.5rem;">💙</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="addprodModal" tabindex="-1" aria-labelledby="addprodModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="addprodModalLabel">Add Product</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="prodname" placeholder="Product Name">
+                    <label for="prodname">Product Name</label>
+                </div>
+                                
+                <div class="input-group form-floating mb-3">
+                    <span class="input-group-text">Description</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">₱</span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest peso)">
+                    <span class="input-group-text">.00</span>
+                </div>
+                <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Product Image</label>
+                    <div class="input-group mb-3">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Choose File</button>
+                        <input type="text" class="form-control" placeholder="No file chosen" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                </div>
+
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Add Product</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
